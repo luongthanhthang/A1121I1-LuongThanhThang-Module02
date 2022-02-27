@@ -36,7 +36,6 @@ public class DeleteElementInArray {
                 newArray[j] = arr[i];
             } else {
                 j--;
-                continue;
             }
         }
 
