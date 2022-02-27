@@ -10,8 +10,8 @@ public class CurrencyConversion {
         Scanner scanner=new Scanner(System.in);
         float rate=scanner.nextFloat();
         System.out.print("Enter USD: ");
-        float USD=scanner.nextFloat();
-        float VND=USD*rate;
-        System.out.printf("%.2f USD into %.2f VND",USD,VND);
+        float usd=scanner.nextFloat();
+        float vnd=usd*rate;
+        System.out.printf("%.2f USD into %.2f VND",usd,vnd);
     }
 }
