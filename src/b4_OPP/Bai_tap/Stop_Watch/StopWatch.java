@@ -29,17 +29,19 @@ public class StopWatch {
     }
 
     //phương thức start() để reset startTime về thời gian hiện tại của hệ thống.
-    public void start() {
-        this.setStartTime(System.currentTimeMillis());
+    public long start() {
+        this.startTime=System.currentTimeMillis();
+        return this.startTime;
     }
 
     //Phương thức stop() để thiết đặt endTime về thời gian hiện tại của hệ thống.
-    public void stop() {
-        this.setEndTime(System.currentTimeMillis());
+    public long stop() {
+        this.endTime=System.currentTimeMillis();
+        return this.endTime;
     }
 
     //Phương thức getElapsedTime() trả về thời gian đã trôi qua theo số milisecond giây
-    public String getElapsedTime() {
-        return "Elapsed Time from Start Time to End Time: "+(getEndTime()-getStartTime());
+    public long getElapsedTime() {
+        return this.endTime-this.startTime;
     }
 }

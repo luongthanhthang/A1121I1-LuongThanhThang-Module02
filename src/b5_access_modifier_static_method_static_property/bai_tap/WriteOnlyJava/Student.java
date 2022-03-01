@@ -17,11 +17,11 @@ public class Student {
 //        this.classes = classes;
 //    }
 
-   private void setName(String name) {
+   protected void setName(String name) {
         this.name = name;
     }
 
-    private void setClasses(String classes) {
+   protected void setClasses(String classes) {
         this.classes = classes;
     }
 
