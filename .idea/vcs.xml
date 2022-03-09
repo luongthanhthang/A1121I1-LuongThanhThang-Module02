@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b8_clean_code_and_refactoring/bai_tap/refactoring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b8_clean_code_and_refactoring/thuc_hanh/refactoring_method/apj-cylinder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b8_clean_code_and_refactoring/thuc_hanh/refactoring_method/apj_cylinder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b8_clean_code_and_refactoring/thuc_hanh/refactoring_rename_variables_and_constants" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b8_clean_code_and_refactoring/thuc_hanh/refactoring_rename_variables_and_constants/java-cleancode-refactoring-renaming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b8_clean_code_and_refactoring/thuc_hanh/refactoring_variable/apj-fizzbuzz" vcs="Git" />
   </component>
 </project>
