@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class CircleComparator implements Comparator<Circle> {
 
-    // dùng để so sánh nhiều thứ, ví dụ so sánh bán kính không được thì so sánh tên
+    // dùng để so sánh nhiều thứ, ví dụ so sánh bán kính không được thì so sánh tên, lớp trước và sau khi so sánh không bị thay đổi
     @Override
     public int compare(Circle circle1, Circle circle2) {
         if(circle1.getRadius()>circle2.getRadius()) {

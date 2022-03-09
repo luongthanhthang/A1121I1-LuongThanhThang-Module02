@@ -15,7 +15,7 @@ public class ComparableCircle extends Circle implements Comparable<ComparableCir
         super(radius, color, filled);
     }
 
-    // ghi đè lại phương thức compareTo để sử dụng lại sort()
+    // ghi đè lại phương thức compareTo để sử dụng lại sort(), lớp trước và sau khi so sánh bị thay đổi
     @Override
     public int compareTo(ComparableCircle circle) {
         if(this.getRadius()>circle.getRadius()) {
