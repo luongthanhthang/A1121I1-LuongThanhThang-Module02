@@ -1,4 +1,5 @@
 package b8_clean_code_and_refactoring.thuc_hanh.refactoring_rename_variables_and_constants.src;
+
 public class Calculator {
 
     public static int calculate(int firstOperand , int secondOperand, char operator) {
