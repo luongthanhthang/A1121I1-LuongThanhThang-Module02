@@ -26,7 +26,7 @@ public class MyList<E> {
     }
 
 
-    //PHƯƠNG THỨC
+    //PHƯƠNG THỨC:
     //phương thức trả về size của mảng
     public int size() {
         return this.size;
@@ -34,6 +34,7 @@ public class MyList<E> {
 
     //phương thức xoá hết các phần từ trong mảng
     public void clear() {
+        //gán size của mảng thành 0
         this.size = 0;
         for (int i = 0; i < elements.length; i++) {
             elements[i] = null;
@@ -58,6 +59,7 @@ public class MyList<E> {
             //tạo mảng mới bằng các copy mảng cũ
             this.elements = Arrays.copyOf(this.elements, newSize);
         } else {
+            //thông báo lỗi khi tăng số lượng mảng không phù hợp
             throw new IllegalArgumentException("minCapacity " + minCapacity + " ERROR");
         }
     }
@@ -78,6 +80,7 @@ public class MyList<E> {
         if (this.elements[index] == null) {
             this.elements[index] = element;
         } else {
+            //dời các element của mảng
             for (int i = size - 1; i >= index; i--) {
                 this.elements[i + 1] = this.elements[i];
             }
@@ -88,7 +91,12 @@ public class MyList<E> {
 
     //xuất 1 phần tử tại index bất kì
     public E get(int index) {
-        return (E) this.elements[index];
+       //kiểm tra index có trong mảng hay không, nếu không thì báo lỗi
+        if(index<0||index>this.size) {
+            throw new IllegalArgumentException("Index"+index+" ERROR");
+        } else {
+            return (E) this.elements[index];
+        }
     }
 
     // truyền vào 1 đối tượng trong mảng, xuất index của đối tượng đó
@@ -110,6 +118,7 @@ public class MyList<E> {
     // phương thức tạo ra bản sao của ArrayList hiện tại
     public MyList<E> clone() {
         MyList<E> copyList = new MyList<>();
+        //thuộc tính elements của mảng
         copyList.elements = Arrays.copyOf(this.elements, this.size);
         copyList.size = this.size;
         return copyList;
@@ -117,7 +126,7 @@ public class MyList<E> {
 
     //phương thức xoá phần từ tại vị trí bất kì
     public E remove(int index) {
-
+        // điều kiện index phải nằm trong mảng, nếu không thì báo lỗi
         if (index < 0 || index > this.elements.length) {
             throw new IllegalArgumentException("ERROR index: " + index);
         } else {

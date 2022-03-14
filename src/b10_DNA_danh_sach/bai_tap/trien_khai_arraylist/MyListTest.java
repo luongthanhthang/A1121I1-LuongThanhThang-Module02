@@ -57,14 +57,12 @@ public class MyListTest {
 //        studentMyList.clear();
 
         //xuất mảng
-        for (int i = 0; i < studentMyList.elements.length; i++) {
+        for (int i = 0; i < studentMyList.size(); i++) {
             //lấy phần từ trong mảng và gán nó kiểu Student
             Student studentTest = (Student) studentMyList.elements[i];
-            if (studentTest != null) {
                 System.out.print("id: " + studentTest.id + " ");
                 System.out.print("name: " + studentTest.name);
                 System.out.println();
-            }
         }
 
         System.out.println("size present: "+studentMyList.size());
@@ -83,14 +81,12 @@ public class MyListTest {
         copyStudent=studentMyList.clone();
         //xuất copy mảng
         System.out.println("\ncopy Array: ");
-        for (int i = 0; i < copyStudent.elements.length; i++) {
+        for (int i = 0; i < copyStudent.size(); i++) {
             //lấy phần từ trong mảng và gán nó kiểu Student
             Student studentCopy = (Student) studentMyList.elements[i];
-            if (studentCopy != null) {
                 System.out.print("id: " + studentCopy.id + " ");
                 System.out.print("name: " + studentCopy.name);
                 System.out.println();
-            }
         }
         System.out.println("size present: "+studentMyList.size());
 
@@ -98,14 +94,12 @@ public class MyListTest {
         System.out.println("\nREMOVE element: ");
         //test phần tử bị xoá
         studentMyList.remove(3);
-        for (int i = 0; i < copyStudent.elements.length; i++) {
+        for (int i = 0; i < studentMyList.size(); i++) {
             //lấy phần từ trong mảng và gán nó kiểu Student
             Student studentCopy = (Student) studentMyList.elements[i];
-            if (studentCopy != null) {
                 System.out.print("id: " + studentCopy.id + " ");
                 System.out.print("name: " + studentCopy.name);
                 System.out.println();
-            }
         }
         System.out.println("size present after remove: "+studentMyList.size());
     }

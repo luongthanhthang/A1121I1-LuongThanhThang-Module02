@@ -56,9 +56,9 @@ public class MyLinkedList<E> {
         //Khai báo 1 Node Holder:    temp->element->holder
         Node holder;
 
-        //Cho con trỏ chạy đến index-1
+        //Cho con trỏ chạy đến index-1, vì mình gán nó là temp=temp.next nên <index-1
         //temp.next khác null để trường hợp Node gắn vào cuối liên kết thì xẩy ra lỗi temp=temp.next;
-        for (int i = 1; i < index && temp.next != null; i++) {
+        for (int i = 0; i < index - 1 && temp.next != null; i++) {
             temp = temp.next;
         }
 
@@ -103,7 +103,7 @@ public class MyLinkedList<E> {
                 this.head = head.next;
             } else {
                 //trỏ đến vị trí trước index
-                for (int i = 1; i < index && temp.next != null; i++) {
+                for (int i = 0; i < index - 1 && temp.next != null; i++) {
                     temp = temp.next;
                 }
                 dataRemove = temp.next;
@@ -175,18 +175,51 @@ public class MyLinkedList<E> {
     //Phương thức trả về index của phần tử
     public int indexOf(E element) {
         Node temp = this.head;
-        for (int i = 0; i < this.numNodes; i++) {
+        int i = 0;
+        while (temp.next != null) {
             if (temp.getData().equals(element)) {
                 return i;
             }
             temp = temp.next;
+            i++;
         }
         return -1;
     }
 
+    // phương thức add thêm phần tử, nếu được trả về true
+    // , không thì trả về false và đây là add vào vị trí cuối
+    public boolean add(E element) {
+        //chạy lại liên kết xem có phần tử đó ở cuối không
+        if (element == null) {
+
+            return false;
+        } else {
+            this.addLast(element);
+            return true;
+        }
+    }
+
     // Phương thức tăng kích thước phần tử trong liên kết
+    public void ensureCapacity(int minCapacity) {
+    }
 
     // Phương thức lấy data đầu liên kết
+    public E getFirst() {
+        return (E) this.head.data;
+    }
 
     // Phương thức lấy data cuối liên kết
+    public E getLast() {
+        Node temp = this.head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        return (E) temp.data;
+    }
+
+    //Phương thức xoá hết liên kết
+    public void clear() {
+        this.numNodes=0;
+        this.head = null;
+    }
 }
