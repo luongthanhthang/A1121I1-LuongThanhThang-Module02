@@ -15,12 +15,12 @@ public class FuramaController {
     public static void mainMenu() {
         boolean check = true;
         //check để xem người nhập có nhập những số trong menu hay không
-        do {
+        while (check) {
             System.out.println();
             System.out.println("1\tEmployee Management");
             System.out.println("2\tCustomer Management");
             System.out.println("3\tFacility Management ");
-            System.out.println("4\tBooking Management");
+            System.out.println("y4\tBooking Management");
             System.out.println("5\tPromotion Management");
             System.out.println("6\tExit");
             System.out.print("input Menu: ");
@@ -47,13 +47,13 @@ public class FuramaController {
                 default:
                     check = false;
             }
-        } while (check);
+        }
     }
 
     public static void DisplayEmployeeMenu() {
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         boolean check = true;
-        do {
+        while (check) {
             System.out.println();
             System.out.println("1.\tDisplay list employees");
             System.out.println("2.\tAdd new employee");
@@ -71,14 +71,12 @@ public class FuramaController {
                     employeeService.update();
                     break;
                 case 4:
-                    // CHƯA LÀM ĐƯỢC
-                    check = false;
                     mainMenu();
                     break;
                 default:
                     check = false;
             }
-        } while (check);
+        }
     }
 
     public static void DisplayCustomerMenu() {
