@@ -24,15 +24,19 @@ public class MaxArraySearch {
             listChar.add(charList);
         }
 
-        for (int i = 0; i < listChar.size(); i++) {
-            if (listChar.get(i-1) < listChar.get(i + 1)) {
-                listChar.remove(i);
+        for (int i = 0; i < listChar.size()-1; i++) {
+            if (listChar.get(i) >= listChar.get(i + 1)) {
+                listChar.remove(i+1);
+                i--;
             }
         }
         // xuất mảng sau khi sắp xếp
-        for (char charElement : listChar
-        ) {
-            System.out.print(charElement);
-        }
+//        for (char charElement : listChar
+//        ) {
+//            System.out.print(charElement);
+//        }
+
+        listChar.stream().forEach(System.out::print);
+//        listChar.stream().forEach(charList -> System.out.printf("%-4s",charList));
     }
 }

@@ -45,8 +45,6 @@ public class FuramaController {
                 case 6:
                     System.exit(0);
                     break;
-                default:
-                    check = false;
             }
         }
     }
@@ -74,8 +72,6 @@ public class FuramaController {
                 case 4:
                     mainMenu();
                     break;
-                default:
-                    check = false;
             }
         }
     }
