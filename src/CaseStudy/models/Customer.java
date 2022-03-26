@@ -4,6 +4,8 @@ public class Customer extends Person {
     private String idCustomer;
     private String rankCustomer;
 
+    // rankCustomer: Loại Customer bao gồm: (Diamond, Platinum, Gold, Silver, Member).
+
     //constructor
 
     public Customer() {

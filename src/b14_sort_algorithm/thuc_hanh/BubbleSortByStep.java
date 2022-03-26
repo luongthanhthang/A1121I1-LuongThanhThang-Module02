@@ -27,9 +27,9 @@ public class BubbleSortByStep {
 
     public static void bubbleSortByStep(int[] list) {
         boolean check = true;
-        for (int i = 1; i < list.length && check; i++) {
+        for (int i = 0; i < list.length && check; i++) {
             check = false;
-            for (int j = 0; j < list.length - i; j++) {
+            for (int j = 0; j < list.length - 1 - i; j++) {
                 if (list[j] > list[j + 1]) {
                     //đổi vị trí
                     int temp = list[j];

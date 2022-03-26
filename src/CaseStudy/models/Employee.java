@@ -6,6 +6,9 @@ public class Employee extends Person {
     private String rankEmployee;     //vị trí
     private double salary;  //lương
 
+    //level:         Trình độ sẽ lưu trữ các thông tin: Trung cấp, Cao đẳng, Đại học và sau đại học
+    //rankEmployee:   Vị trí sẽ lưu trữ các thông tin: Lễ tân, phục vụ, chuyên viên, giám sát, quản lý, giám đốc.
+
     //constructor
 
     public Employee() {

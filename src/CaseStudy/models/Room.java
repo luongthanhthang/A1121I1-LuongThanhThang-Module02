@@ -1,26 +1,26 @@
 package CaseStudy.models;
 
 public class Room extends Facility {
-    private String serviceFree;
+    private String serviceFreeRoom;
 
     //constructor
 
     public Room() {
     }
 
-    public Room(String name, double area, double cost, int maxPeople, String rentType, String serviceFree) {
+    public Room(String name, double area, double cost, int maxPeople, String rentType, String serviceFreeRoom) {
         super(name, area, cost, maxPeople, rentType);
-        this.serviceFree = serviceFree;
+        this.serviceFreeRoom = serviceFreeRoom;
     }
 
     //getter setter
 
-    public String getServiceFree() {
-        return serviceFree;
+    public String getServiceFreeRoom() {
+        return serviceFreeRoom;
     }
 
-    public void setServiceFree(String serviceFree) {
-        this.serviceFree = serviceFree;
+    public void setServiceFreeRoom(String serviceFreeRoom) {
+        this.serviceFreeRoom = serviceFreeRoom;
     }
 
     //xuất thông tin
@@ -28,7 +28,7 @@ public class Room extends Facility {
     @Override
     public String toString() {
         return "Room{" + super.toString() +
-                "serviceFree='" + serviceFree + '\'' +
+                "serviceFreeRoom='" + serviceFreeRoom + '\'' +
                 '}';
     }
 }
