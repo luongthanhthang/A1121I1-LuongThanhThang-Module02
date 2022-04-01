@@ -1,4 +1,4 @@
-package b15_exeception_and_debug.thuc_hanh.debug_application_java;
+package b15_exeception_and_debug.thuc_hanh;
 
 import java.util.Scanner;
 
