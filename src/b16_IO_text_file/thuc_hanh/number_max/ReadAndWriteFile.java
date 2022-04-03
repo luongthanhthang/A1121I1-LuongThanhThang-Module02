@@ -20,12 +20,14 @@ public class ReadAndWriteFile {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             System.out.print("Enter element: [" + i + "]: ");
-            list.add(scanner.nextInt());
+            list.add(Integer.parseInt(scanner.nextLine()));
         }
+        //true là cho ghi tiếp vào file, false là không cho (nghĩa là sẽ ghi đè nội dung cũ)
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
-            for (Integer element : list
-            ) {
-                writer.write(element);
+            for (Integer element : list) {
+                //phải chuyển về lại String vì ghi đọc chỉ đọc được kiểu String
+                writer.write(Integer.toString(element));
+                //trỏ con trỏ xuống dòng
                 writer.newLine();
             }
         } catch (IOException e) {
@@ -33,6 +35,17 @@ public class ReadAndWriteFile {
         }
         return list;
     }
+
+    //ghi thêm dòng tìm ra max vào file
+    public void writeMaxToFile(String path, int max) {
+        // true là được ghi tiếp vào file, false thì ghi đè vào file
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(path, true));) {
+            writer.write("Max into list :" + max);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     //đọc file
     public void readFromFile(String path) {
@@ -44,16 +57,12 @@ public class ReadAndWriteFile {
                 throw new FileNotFoundException();
             }
 
-            // Đọc từng dòng của file và tiến hành cộng tổng lại
+            // Đọc từng dòng của file
             BufferedReader reader = new BufferedReader(new FileReader(path));
             String line = null;
             while ((line = reader.readLine()) != null) {
                 //chuyển thành số vì trong file chỉ có kiểu String
-//                try {
                 System.out.println(line);
-//                } catch (Exception e) {
-//                    System.out.println("dòng này bị lỗi");
-//                }
             }
             //đóng file
             reader.close();
