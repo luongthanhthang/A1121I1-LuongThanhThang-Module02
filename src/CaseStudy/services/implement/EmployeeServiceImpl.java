@@ -78,7 +78,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void update() {
+    public void edit() {
         boolean check = true;
         System.out.print("input id element update: ");
         String idEmployee = scanner.nextLine();

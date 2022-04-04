@@ -64,7 +64,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void update() {
+    public void edit() {
         boolean check = true;
         System.out.print("input id element update: ");
         String idCustomer = scanner.nextLine();

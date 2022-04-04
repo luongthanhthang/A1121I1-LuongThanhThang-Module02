@@ -7,7 +7,6 @@ import CaseStudy.services.implement.CustomerServiceImpl;
 import CaseStudy.services.implement.EmployeeServiceImpl;
 import CaseStudy.services.implement.FacilityServiceImpl;
 
-import java.util.LinkedList;
 import java.util.Scanner;
 
 public class FuramaController {
@@ -73,7 +72,7 @@ public class FuramaController {
                     employeeList.addNew();
                     break;
                 case 3:
-                    employeeList.update();
+                    employeeList.edit();
                     break;
                 case 4:
                     mainMenu();
@@ -101,7 +100,7 @@ public class FuramaController {
                     customerList.addNew();
                     break;
                 case 3:
-                    customerList.update();
+                    customerList.edit();
                     break;
                 case 4:
                     mainMenu();

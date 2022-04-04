@@ -6,7 +6,7 @@ public interface Service {
     //đọc
     public void display();
     //cập nhật
-    public void update();
+    public void edit();
 //    //xoá
 //    public void delete();
 }
