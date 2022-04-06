@@ -20,27 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b4e2f1-95cc-47d7-a6e2-4268a60e79db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/services/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/BookingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/util/BookingComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/thuc_hanh/copy_file_max_data/CopyFileMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/thuc_hanh/copy_file_max_data/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/thuc_hanh/write_read_binary_file/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/bai_tap/product_management_binary_file/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/bai_tap/product_management_binary_file/ProductManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/bai_tap/product_management_binary_file/TestProductFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/thuc_hanh/write_read_binary_file/ReadWriteObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/thuc_hanh/write_read_binary_file/WriteReadObjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b18_string_regex/bai_tap/validate_class_name/ValidateNameClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b18_string_regex/bai_tap/validate_number_phone/ValidateClassName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b18_string_regex/thuc_hanh/CrawlList/CrawlSongExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b18_string_regex/thuc_hanh/validate_account/ValidateAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b18_string_regex/thuc_hanh/validate_email/ValidateEmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/controllers/FuramaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/controllers/FuramaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/BookingComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/EmployeeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/FacilityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/FacilityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/file_txt/nationList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/file_txt/nationList.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/controllers/FuramaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/BookingComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/implement/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/implement/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/implement/FacilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/FacilityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/b17_binaryfile_serialization/thuc_hanh/copy_file_max_data/demo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/b17_binaryfile_serialization/thuc_hanh/write_read_binary_file/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/b17_binaryfile_serialization/thuc_hanh/write_read_binary_file/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/b17_binaryfile_serialization/thuc_hanh/write_read_binary_file/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,20 +66,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="b17_binaryfile_serialization.bai_tap.product_management_binary_file" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CodeGym\Module 2\src\file_txt" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="b17_binaryfile_serialization.thuc_hanh.copy_file_max_data.Test" />
+  <component name="RunManager" selected="Application.ValidateClassName">
+    <configuration name="CrawlSongExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="b18_string_regex.thuc_hanh.CrawlList.CrawlSongExample" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="b17_binaryfile_serialization.thuc_hanh.copy_file_max_data.*" />
+          <option name="PATTERN" value="b18_string_regex.thuc_hanh.CrawlList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="b16_IO_text_file.bai_tap.copy_file.TestCopyFile" />
+    <configuration name="ValidateAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="b18_string_regex.thuc_hanh.validate_account.ValidateAccount" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="b16_IO_text_file.bai_tap.copy_file.*" />
+          <option name="PATTERN" value="b18_string_regex.thuc_hanh.validate_account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,19 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestDate" />
-      <module name="module2_demo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFileFindMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="b16_IO_text_file.thuc_hanh.number_max.TestFileFindMax" />
+    <configuration name="ValidateClassName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="b18_string_regex.bai_tap.validate_number_phone.ValidateClassName" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="b16_IO_text_file.thuc_hanh.number_max.*" />
+          <option name="PATTERN" value="b18_string_regex.bai_tap.validate_number_phone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +116,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestReadWriteFileCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="b16_IO_text_file.bai_tap.read_file_csv.TestReadWriteFileCSV" />
+    <configuration name="ValidateEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="b18_string_regex.thuc_hanh.validate_email.ValidateEmail" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="b16_IO_text_file.bai_tap.read_file_csv.*" />
+          <option name="PATTERN" value="b18_string_regex.thuc_hanh.validate_email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateNameClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="b18_string_regex.bai_tap.validate_class_name.ValidateNameClass" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="b18_string_regex.bai_tap.validate_class_name.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TestDate" />
-        <item itemvalue="Application.TestReadWriteFileCSV" />
-        <item itemvalue="Application.TestCopyFile" />
-        <item itemvalue="Application.TestFileFindMax" />
+        <item itemvalue="Application.ValidateClassName" />
+        <item itemvalue="Application.ValidateNameClass" />
+        <item itemvalue="Application.CrawlSongExample" />
+        <item itemvalue="Application.ValidateAccount" />
+        <item itemvalue="Application.ValidateEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +185,12 @@
       <workItem from="1649076294365" duration="803000" />
       <workItem from="1649077152323" duration="199000" />
       <workItem from="1649077381319" duration="4319000" />
+      <workItem from="1649087429362" duration="595000" />
+      <workItem from="1649128725831" duration="2000" />
+      <workItem from="1649128760034" duration="1190000" />
+      <workItem from="1649171103931" duration="1189000" />
+      <workItem from="1649218205398" duration="5771000" />
+      <workItem from="1649248417909" duration="6203000" />
     </task>
     <servers />
   </component>
@@ -206,14 +214,22 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="437" y="0" key="#Project_Structure/0.0.1475.789@0.0.1475.789" timestamp="1649078241672" />
-    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1649035000790">
+    <state x="483" y="197" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1649225037336">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1475.789@0.0.1475.789" timestamp="1649035000790" />
-    <state x="855" y="323" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1649076989558">
+    <state x="483" y="197" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1475.789@0.0.1475.789" timestamp="1649225037336" />
+    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1649224403256">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="855" y="323" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1475.789@0.0.1475.789" timestamp="1649076989558" />
+    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1475.789@0.0.1475.789" timestamp="1649224403256" />
+    <state x="855" y="323" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1649249294537">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="855" y="323" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1475.789@0.0.1475.789" timestamp="1649249294537" />
+    <state x="747" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1649225536304">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="747" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1475.789@0.0.1475.789" timestamp="1649225536304" />
     <state x="468" y="142" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1649036052595">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
@@ -222,35 +238,35 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="518" y="150" key="FileChooserDialogImpl/0.0.1475.789@0.0.1475.789" timestamp="1648971721173" />
-    <state width="1431" height="195" key="GridCell.Tab.0.bottom" timestamp="1649081063395">
+    <state width="1431" height="193" key="GridCell.Tab.0.bottom" timestamp="1649254678160">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="195" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1649081063395" />
-    <state width="1431" height="195" key="GridCell.Tab.0.center" timestamp="1649081063395">
+    <state width="1431" height="193" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1649254678160" />
+    <state width="1431" height="193" key="GridCell.Tab.0.center" timestamp="1649254678160">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="195" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1649081063395" />
-    <state width="1431" height="195" key="GridCell.Tab.0.left" timestamp="1649081063395">
+    <state width="1431" height="193" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1649254678160" />
+    <state width="1431" height="193" key="GridCell.Tab.0.left" timestamp="1649254678160">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="195" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1649081063395" />
-    <state width="1431" height="195" key="GridCell.Tab.0.right" timestamp="1649081063395">
+    <state width="1431" height="193" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1649254678160" />
+    <state width="1431" height="193" key="GridCell.Tab.0.right" timestamp="1649254678160">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="195" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1649081063395" />
+    <state width="1431" height="193" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1649254678160" />
     <state x="359" y="99" key="NewModule_or_Project.wizard" timestamp="1648971665743">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="359" y="99" key="NewModule_or_Project.wizard/0.0.1475.789@0.0.1475.789" timestamp="1648971665743" />
-    <state x="164" y="0" key="SettingsEditor" timestamp="1648971725793">
+    <state x="164" y="0" key="SettingsEditor" timestamp="1649222102133">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1648490146953" />
-    <state x="164" y="0" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1648971725793" />
+    <state x="164" y="0" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1649222102133" />
     <state x="318" y="50" key="editAsTableFormatDialogDimension" timestamp="1648963360355">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
@@ -259,6 +275,10 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="119" y="15" key="new project wizard/0.0.1475.789@0.0.1475.789" timestamp="1648971724090" />
+    <state x="814" y="156" key="refactoring.ChangeSignatureDialog" timestamp="1649223455077">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="814" y="156" key="refactoring.ChangeSignatureDialog/0.0.1475.789@0.0.1475.789" timestamp="1649223455077" />
     <state x="349" y="1" width="775" height="787" key="search.everywhere.popup" timestamp="1649079479932">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
