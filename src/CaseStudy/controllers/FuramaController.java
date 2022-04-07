@@ -3,6 +3,8 @@ package CaseStudy.controllers;
 import CaseStudy.services.CustomerService;
 import CaseStudy.services.EmployeeService;
 import CaseStudy.services.FacilityService;
+import CaseStudy.services.Service;
+import CaseStudy.services.implement.BookingServiceImpl;
 import CaseStudy.services.implement.CustomerServiceImpl;
 import CaseStudy.services.implement.EmployeeServiceImpl;
 import CaseStudy.services.implement.FacilityServiceImpl;
@@ -156,6 +158,7 @@ public class FuramaController {
     }
 
     public static void displayBookingMenu() {
+        Service bookingList = new BookingServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("\n----------Booking Menu----------");
@@ -166,6 +169,14 @@ public class FuramaController {
             System.out.println("5.\tEdit contracts");
             System.out.println("6.\tReturn main menu");
             System.out.print("input Booking Menu: ");
+            switch (Integer.parseInt(scanner.nextLine())) {
+                case 1:
+                    bookingList.addNew();
+                    break;
+                case 2:
+                    bookingList.display();
+                    break;
+            }
         }
     }
 

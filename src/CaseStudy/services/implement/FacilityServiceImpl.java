@@ -46,8 +46,8 @@ public class FacilityServiceImpl implements FacilityService {
     public void displayMaintenance() {
         //hiển thị danh sách cần bảo trì
         System.out.println("-----LIST Facility need maintenance-----");
-        for (Map.Entry<Facility, Integer> element: facilityList.entrySet()) {
-            if(element.getValue()>=5) {
+        for (Map.Entry<Facility, Integer> element : facilityList.entrySet()) {
+            if (element.getValue() >= 5) {
                 System.out.println("Facility: " + element.getKey() + " USED " + element.getValue() + " times");
             }
         }
@@ -56,6 +56,9 @@ public class FacilityServiceImpl implements FacilityService {
     @Override
     public void addNewVilla() {
         //nhập thông tin Villa
+        System.out.print("Input name id Facility Villa: ");
+        String idFacility = scanner.nextLine();
+
         System.out.print("Input name Villa: ");
         String name = scanner.nextLine();
 
@@ -81,7 +84,7 @@ public class FacilityServiceImpl implements FacilityService {
         int numberFloor = Integer.parseInt(scanner.nextLine());
 
         //tạo đối tượng Villa
-        Facility villa = new Villa(name, area, cost, maxPeople, rentType, standardRoom, areaPool, numberFloor);
+        Facility villa = new Villa(idFacility, name, area, cost, maxPeople, rentType, standardRoom, areaPool, numberFloor);
 
         //bỏ đối tượng vào Map List:
         // Key: cơ sở nào
@@ -92,6 +95,9 @@ public class FacilityServiceImpl implements FacilityService {
     @Override
     public void addNewHouse() {
         //nhập thông tin House
+        System.out.print("Input name id Facility House: ");
+        String idFacility = scanner.nextLine();
+
         System.out.print("Input name House: ");
         String name = scanner.nextLine();
 
@@ -114,7 +120,7 @@ public class FacilityServiceImpl implements FacilityService {
         int numberFloor = Integer.parseInt(scanner.nextLine());
 
         //tạo đối tượng House
-        Facility house = new House(name, area, cost, maxPeople, rentType, standardRoom, numberFloor);
+        Facility house = new House(idFacility, name, area, cost, maxPeople, rentType, standardRoom, numberFloor);
 
         //bỏ đối tượng vào Map List:
         // Key: cơ sở nào
@@ -125,6 +131,9 @@ public class FacilityServiceImpl implements FacilityService {
     @Override
     public void addNewRoom() {
         //nhập thông tin Room
+        System.out.print("Input name id Facility Room: ");
+        String idFacility = scanner.nextLine();
+
         System.out.print("Input name Room: ");
         String name = scanner.nextLine();
 
@@ -144,7 +153,7 @@ public class FacilityServiceImpl implements FacilityService {
         String serviceFreeRoom = scanner.nextLine();
 
         //tạo đối tượng Room
-        Facility room = new Room(name, area, cost, maxPeople, rentType, serviceFreeRoom);
+        Facility room = new Room(idFacility, name, area, cost, maxPeople, rentType, serviceFreeRoom);
 
         //bỏ đối tượng vào Map List:
         // Key: cơ sở nào

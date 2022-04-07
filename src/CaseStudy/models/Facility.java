@@ -4,6 +4,7 @@ public abstract class Facility {
     //Các loại dịch vụ này sẽ bao có các thông tin:
     // Tên dịch vụ, Diện tích sử dụng, Chi phí thuê, Số lượng người tối đa,
     // Kiểu thuê (bao gồm thuê theo năm, tháng, ngày, giờ.
+    private String idFacility;
     private String name;
     private double area;
     private double cost;
@@ -15,7 +16,8 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(String name, double area, double cost, int maxPeople, String rentType) {
+    public Facility(String idFacility, String name, double area, double cost, int maxPeople, String rentType) {
+        this.idFacility = idFacility;
         this.name = name;
         this.area = area;
         this.cost = cost;
@@ -65,13 +67,26 @@ public abstract class Facility {
         this.rentType = rentType;
     }
 
+
+    public String getIdFacility() {
+        return idFacility;
+    }
+
+    public void setIdFacility(String idFacility) {
+        this.idFacility = idFacility;
+    }
+
     //đưa ra thông tin
+
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
+        return "Facility{" +
+                "idFacility='" + idFacility + '\'' +
+                ", name='" + name + '\'' +
                 ", area=" + area +
                 ", cost=" + cost +
                 ", maxPeople=" + maxPeople +
-                ", rentType='" + rentType + '\'' + " ,";
+                ", rentType='" + rentType + '\'' +
+                '}';
     }
 }

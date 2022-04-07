@@ -13,7 +13,7 @@ public class BookingComparator implements Comparator<Booking> {
     @Override
     public int compare(Booking booking1, Booking booking2) {
         //format lại (ngày tháng năm) vì mặc đinh là ( tháng ngày năm)
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         //ép kiểu từ String qua Date
         LocalDate startDate1 = LocalDate.parse(booking1.getStartDate(), formatter);
         LocalDate startDate2 = LocalDate.parse(booking2.getStartDate(), formatter);

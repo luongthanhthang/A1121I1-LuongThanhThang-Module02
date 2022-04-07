@@ -1,34 +1,32 @@
 package CaseStudy.models;
 
 public class Booking {
-    private String idBooking;
+    private int idBooking;
     private String startDate;
     private String endDate;
-    private String idCustomer;
-    private String nameService;
-    private String optionService;
+    private Customer customer;
+    private Facility facility;
 
     //constructor
 
     public Booking() {
     }
 
-    public Booking(String idBooking, String startDate, String endDate, String idCustomer, String nameService, String optionService) {
+    public Booking(int idBooking, String startDate, String endDate, Customer customer, Facility facility) {
         this.idBooking = idBooking;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.idCustomer = idCustomer;
-        this.nameService = nameService;
-        this.optionService = optionService;
+        this.customer = customer;
+        this.facility = facility;
     }
 
     //getter setter
 
-    public String getIdBooking() {
+    public int getIdBooking() {
         return idBooking;
     }
 
-    public void setIdBooking(String idBooking) {
+    public void setIdBooking(int idBooking) {
         this.idBooking = idBooking;
     }
 
@@ -48,41 +46,30 @@ public class Booking {
         this.endDate = endDate;
     }
 
-    public String getIdCustomer() {
-        return idCustomer;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setIdCustomer(String idCustomer) {
-        this.idCustomer = idCustomer;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
-    public String getNameService() {
-        return nameService;
+    public Facility getFacility() {
+        return facility;
     }
 
-    public void setNameService(String nameService) {
-        this.nameService = nameService;
+    public void setFacility(Facility facility) {
+        this.facility = facility;
     }
-
-    public String getOptionService() {
-        return optionService;
-    }
-
-    public void setOptionService(String optionService) {
-        this.optionService = optionService;
-    }
-
-    //xuất thông tin
 
     @Override
     public String toString() {
         return "Booking{" +
-                "idBooking='" + idBooking + '\'' +
+                "idBooking=" + idBooking +
                 ", startDate='" + startDate + '\'' +
                 ", endDate='" + endDate + '\'' +
-                ", idCustomer='" + idCustomer + '\'' +
-                ", nameService='" + nameService + '\'' +
-                ", optionService='" + optionService + '\'' +
+                ", customer=" + customer +
+                ", facility=" + facility +
                 '}';
     }
 }
