@@ -1,13 +1,7 @@
 package CaseStudy.controllers;
 
-import CaseStudy.services.CustomerService;
-import CaseStudy.services.EmployeeService;
-import CaseStudy.services.FacilityService;
-import CaseStudy.services.Service;
-import CaseStudy.services.implement.BookingServiceImpl;
-import CaseStudy.services.implement.CustomerServiceImpl;
-import CaseStudy.services.implement.EmployeeServiceImpl;
-import CaseStudy.services.implement.FacilityServiceImpl;
+import CaseStudy.services.*;
+import CaseStudy.services.implement.*;
 
 import java.util.Scanner;
 
@@ -18,12 +12,14 @@ public class FuramaController {
         mainMenu();
     }
 
+    //xử lý lỗi đưa ra exception khi nhập chữ
+
     //menu chính
     public static void mainMenu() {
         boolean check = true;
         //check để xem người nhập có nhập những số trong menu hay không
         while (check) {
-            System.out.println("----------Main Menu----------");
+            System.out.println("\n----------Main Menu----------");
             System.out.println("1\tEmployee Management");
             System.out.println("2\tCustomer Management");
             System.out.println("3\tFacility Management ");
@@ -31,8 +27,18 @@ public class FuramaController {
             System.out.println("5\tPromotion Management");
             System.out.println("6\tExit");
             System.out.print("input Menu: ");
+
+            //cho choice bằng 0 vì nó không nằm từ 1->6 và chương trình chạy bình thường
+            int choice = 0;
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.err.println("Input not Number, Please re-input!");
+                e.printStackTrace();
+            }
+
             //xem chọn vào menu nào
-            switch (Integer.parseInt(scanner.nextLine())) {
+            switch (choice) {
                 case 1:
                     displayEmployeeMenu();
                     break;
@@ -66,7 +72,16 @@ public class FuramaController {
             System.out.println("3.\tEdit employee");
             System.out.println("4.\tReturn main menu");
             System.out.print("input Employee Menu: ");
-            switch (Integer.parseInt(scanner.nextLine())) {
+            //cho choice bằng 0 vì nó không nằm từ 1->6 và chương trình chạy bình thường
+            int choice = 0;
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.err.println("Input not Number, Please re-input!");
+                e.printStackTrace();
+            }
+
+            switch (choice) {
                 case 1:
                     employeeList.display();
                     break;
@@ -94,7 +109,17 @@ public class FuramaController {
             System.out.println("3.\tEdit customer");
             System.out.println("4.\tReturn main menu");
             System.out.print("input Customer Menu: ");
-            switch (Integer.parseInt(scanner.nextLine())) {
+
+            //cho choice bằng 0 vì nó không nằm từ 1->6 và chương trình chạy bình thường
+            int choice = 0;
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.err.println("Input not Number, Please re-input!");
+                e.printStackTrace();
+            }
+
+            switch (choice) {
                 case 1:
                     customerList.display();
                     break;
@@ -122,7 +147,17 @@ public class FuramaController {
             System.out.println("3.\tDisplay list facility maintenance");  //bảo trì
             System.out.println("4.\tReturn main menu");
             System.out.print("input Facility Menu: ");
-            switch (Integer.parseInt(scanner.nextLine())) {
+
+            //cho choice bằng 0 vì nó không nằm từ 1->6 và chương trình chạy bình thường
+            int choice = 0;
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.err.println("Input not Number, Please re-input!");
+                e.printStackTrace();
+            }
+
+            switch (choice) {
                 case 1:
                     facilityList.display();
                     break;
@@ -132,7 +167,16 @@ public class FuramaController {
                         System.out.println("2.\tAdd New House");
                         System.out.println("3.\tAdd New Room");
                         System.out.println("4.\tBack to menu");
-                        switch (Integer.parseInt(scanner.nextLine())) {
+                        System.out.print("Input facility: ");
+                        //cho choice bằng 0 vì nó không nằm từ 1->6 và chương trình chạy bình thường
+                        int inputFacility = 0;
+                        try {
+                            inputFacility = Integer.parseInt(scanner.nextLine());
+                        } catch (NumberFormatException e) {
+                            System.err.println("Input not Number, Please re-input!");
+                            e.printStackTrace();
+                        }
+                        switch (inputFacility) {
                             case 1:
                                 facilityList.addNewVilla();
                                 break;
@@ -159,6 +203,7 @@ public class FuramaController {
 
     public static void displayBookingMenu() {
         Service bookingList = new BookingServiceImpl();
+        Service contractList = new ContractServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("\n----------Booking Menu----------");
@@ -169,18 +214,41 @@ public class FuramaController {
             System.out.println("5.\tEdit contracts");
             System.out.println("6.\tReturn main menu");
             System.out.print("input Booking Menu: ");
-            switch (Integer.parseInt(scanner.nextLine())) {
+
+            //cho choice bằng 0 vì nó không nằm từ 1->6 và chương trình chạy bình thường
+            int choice = 0;
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.err.println("Input not Number, Please re-input!");
+                e.printStackTrace();
+            }
+
+            switch (choice) {
                 case 1:
                     bookingList.addNew();
                     break;
                 case 2:
                     bookingList.display();
                     break;
+                case 3:
+                    contractList.addNew();
+                    break;
+                case 4:
+                    contractList.display();
+                    break;
+                case 5:
+                    contractList.edit();
+                    break;
+                case 6:
+                    mainMenu();
+                    break;
             }
         }
     }
 
     public static void displayPromotionMenu() {
+        PromotionService promotionService = new PromotionServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("\n----------Promotion Menu----------");
@@ -188,6 +256,27 @@ public class FuramaController {
             System.out.println("2.\tDisplay list customers get voucher");
             System.out.println("3.\tReturn main menu");
             System.out.print("input Promotion Menu: ");
+
+            //cho choice bằng 0 vì nó không nằm từ 1->6 và chương trình chạy bình thường
+            int choice = 0;
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.err.println("Input not Number, Please re-input!");
+                e.printStackTrace();
+            }
+
+            switch (choice) {
+                case 1:
+                    promotionService.displayCustomerListUseServiceInYear();
+                    break;
+                case 2:
+                    promotionService.displayCustomerListGetVoucher();
+                    break;
+                case 3:
+                    mainMenu();
+                    break;
+            }
         }
     }
 }

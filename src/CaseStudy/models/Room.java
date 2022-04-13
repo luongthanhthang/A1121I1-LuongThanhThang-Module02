@@ -26,9 +26,16 @@ public class Room extends Facility {
     //xuất thông tin
 
     @Override
-    public String toString() {
-        return "Room{" + super.toString() +
+    public String toStringDisplay() {
+        return "Room{" + super.toStringDisplay() + "," +
                 "serviceFreeRoom='" + serviceFreeRoom + '\'' +
                 '}';
+    }
+
+    //dùng cho file CSV
+
+    @Override
+    public String toString() {
+        return super.toString() + "," + serviceFreeRoom;
     }
 }

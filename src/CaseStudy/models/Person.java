@@ -85,15 +85,25 @@ public abstract class Person {
 
 
     //đưa thông tin
-
-    @Override
-    public String toString() {
+    public String toStringDisplay() {
         return "name='" + name + '\'' +
                 ", dateOfBirth='" + dateOfBirth + '\'' +
                 ", sex='" + sex + '\'' +
                 ", id='" + id + '\'' +
                 ", phoneNumber=" + phoneNumber +
                 ", email='" + email + '\'' +
-                ", address='" + address + '\''+", ";
+                ", address='" + address + '\'';
+    }
+
+    //dùng cho file CSV
+    @Override
+    public String toString() {
+        return name
+                + "," + dateOfBirth
+                + "," + sex
+                + "," + id
+                + "," + phoneNumber
+                + "," + email
+                + ", " + address;
     }
 }

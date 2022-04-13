@@ -2,11 +2,13 @@ package CaseStudy.services;
 
 public interface Service {
     //thêm
-    public void addNew();
+    void addNew();
+
     //đọc
-    public void display();
+    void display();
+
     //cập nhật
-    public void edit();
+    void edit();
 //    //xoá
 //    public void delete();
 }

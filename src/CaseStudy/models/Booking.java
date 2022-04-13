@@ -62,8 +62,7 @@ public class Booking {
         this.facility = facility;
     }
 
-    @Override
-    public String toString() {
+    public String toStringDisplay() {
         return "Booking{" +
                 "idBooking=" + idBooking +
                 ", startDate='" + startDate + '\'' +
@@ -72,4 +71,40 @@ public class Booking {
                 ", facility=" + facility +
                 '}';
     }
+
+    //dùng cho file CSV
+
+    @Override
+    public String toString() {
+        return idBooking +
+                "," + startDate +
+                "," + endDate +
+                "," + customer +
+                "," + facility;
+    }
+
+
+    //mỗi đối tượng sẽ có mỗi hashCode khác nhau
+    //Phương thức này định nghĩa khi nào thì 2 đối tượng có cùng 1 hashCode, Thường dùng trong Set vì Set cần các thành phần khác nhau
+    //vd:
+//    @Override
+//    public int hashCode() {
+//        return idBooking;
+//    }
+
+//    //ví dụ so sánh 2 đối tượng booking
+//    @Override
+//    public boolean equals(Object obj) {
+//        //kiểm tra đối tượng có null hay có thể ép kiểu về booking không
+//        if (obj == null || !(obj instanceof Booking)) {
+//            return false;
+//        }
+//
+//        //ép kiểu obj về Booking
+//        Booking otherBooking = (Booking) obj;
+//        if (otherBooking.idBooking == this.idBooking) {
+//            return true;
+//        }
+//        return false;
+//    }
 }

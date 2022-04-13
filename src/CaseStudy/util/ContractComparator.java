@@ -1,24 +1,22 @@
 package CaseStudy.util;
 
-import CaseStudy.models.Booking;
+import CaseStudy.models.Contract;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
-/*2. Danh sách booking hiển thị phải được sắp xếp theo thứ tự ngày tháng đặt phòng gần nhất,
- nếu trùng nhau thì sắp xếp theo ngày trả phòng*/
 
-public class BookingComparator implements Comparator<Booking> {
-
+public class ContractComparator implements Comparator<Contract> {
     @Override
-    public int compare(Booking booking1, Booking booking2) {
+    public int compare(Contract contract1, Contract contract2) {
+        //xếp theo ngày tháng năm của Facility
         //format lại (ngày tháng năm) vì mặc đinh là ( tháng ngày năm)
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         //ép kiểu từ String qua Date
-        LocalDate startDate1 = LocalDate.parse(booking1.getStartDate(), formatter);
-        LocalDate startDate2 = LocalDate.parse(booking2.getStartDate(), formatter);
-        LocalDate endDate1 = LocalDate.parse(booking1.getEndDate(), formatter);
-        LocalDate endDate2 = LocalDate.parse(booking2.getEndDate(), formatter);
+        LocalDate startDate1 = LocalDate.parse(contract1.getStartDateFacility(), formatter);
+        LocalDate startDate2 = LocalDate.parse(contract2.getStartDateFacility(), formatter);
+        LocalDate endDate1 = LocalDate.parse(contract1.getEndDateFacility(), formatter);
+        LocalDate endDate2 = LocalDate.parse(contract2.getEndDateFacility(), formatter);
 
         //đầu tiên so sánh thời gian ban đầu
         //nếu thời gian ban đầu mà bằng nhau tiếp tục so sánh ngày kết thúc

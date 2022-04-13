@@ -37,11 +37,18 @@ public class Customer extends Person {
 
     //xuất thông tin
 
-    @Override
-    public String toString() {
-        return "Customer{" + super.toString() +
+    public String toStringDisplay() {
+        return "Customer{" + super.toStringDisplay() +
                 "idCustomer='" + idCustomer + '\'' +
                 ", rankCustomer='" + rankCustomer + '\'' +
                 '}';
+    }
+
+    //dùng cho file CSV
+
+    @Override
+    public String toString() {
+        return super.toString() + "," + idCustomer +
+                "," + rankCustomer;
     }
 }

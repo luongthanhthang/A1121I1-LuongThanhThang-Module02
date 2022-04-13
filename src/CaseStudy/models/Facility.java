@@ -77,16 +77,24 @@ public abstract class Facility {
     }
 
     //đưa ra thông tin
-
-    @Override
-    public String toString() {
-        return "Facility{" +
-                "idFacility='" + idFacility + '\'' +
+    public String toStringDisplay() {
+        return "idFacility='" + idFacility + '\'' +
                 ", name='" + name + '\'' +
                 ", area=" + area +
                 ", cost=" + cost +
                 ", maxPeople=" + maxPeople +
-                ", rentType='" + rentType + '\'' +
-                '}';
+                ", rentType='" + rentType + '\'';
+    }
+
+    //dùng cho file CSV
+
+    @Override
+    public String toString() {
+        return idFacility +
+                "," + name +
+                "," + area +
+                "," + cost +
+                "," + maxPeople +
+                "," + rentType;
     }
 }

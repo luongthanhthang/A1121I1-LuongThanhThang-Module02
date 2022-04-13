@@ -36,10 +36,17 @@ public class House extends Facility {
     //xuất thông tin
 
     @Override
-    public String toString() {
-        return "House{" + super.toString() +
+    public String toStringDisplay() {
+        return "House{" + super.toStringDisplay() + "," +
                 "standardRoomHouse='" + standardRoomHouse + '\'' +
                 ", numberFloorHouse=" + numberFloorHouse +
                 '}';
+    }
+
+    //dùng cho file CSV
+    @Override
+    public String toString() {
+        return super.toString() + "," + standardRoomHouse +
+                "," + numberFloorHouse;
     }
 }

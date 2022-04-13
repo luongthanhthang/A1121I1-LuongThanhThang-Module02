@@ -58,13 +58,21 @@ public class Employee extends Person {
 
     //xuất thông tin
 
-    @Override
-    public String toString() {
-        return "Employee{" + super.toString() +
+    public String toStringDisplay() {
+        return "Employee{" + super.toStringDisplay() + "," +
                 "idEmployee='" + idEmployee + '\'' +
                 ", level='" + level + '\'' +
-                ", rank='" + rankEmployee + '\'' +
+                ", rankEmployee='" + rankEmployee + '\'' +
                 ", salary=" + salary +
                 '}';
+    }
+
+    //dùng cho file CSV
+    @Override
+    public String toString() {
+        return super.toString() + "," + idEmployee +
+                "," + level +
+                "," + rankEmployee +
+                "," + salary;
     }
 }
