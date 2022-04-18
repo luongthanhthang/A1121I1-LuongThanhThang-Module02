@@ -20,51 +20,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b4e2f1-95cc-47d7-a6e2-4268a60e79db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/house.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/room.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/villa.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/booking.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/contract.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/customer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/employee.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/services/ContractService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/services/PromotionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/ContractServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/PromotionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/util/ContractComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/util/ReadAndWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/util/AgeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/util/RegexData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/controllers/controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/data/benh_nhan_thuong.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/data/benh_nhan_vip.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/models/BenhNhan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/models/BenhNhanThuong.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/models/BenhNhanVip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/service/BenhNhanService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/service/BenhNhanThuongService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/service/BenhNhapVipService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/utils/NgayNhapRaException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/utils/NotFoundMedicalRecordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/utils/ReadAndWrite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Module 2/bai_thi_module2/utils/RegexData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/module2_demo/demo_case_study/data/dien_thoai_chinh_hang.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/module2_demo/demo_case_study/data/dien_thoai_xach_tay.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/util/AgeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/util/RegexData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/controllers/controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/data/benh_nhan_thuong.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/data/benh_nhan_vip.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/models/BenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/models/BenhNhanThuong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/models/BenhNhanVip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/service/BenhNhanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/service/BenhNhanThuongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/service/BenhNhapVipService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/utils/NgayNhapRaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/utils/NotFoundMedicalRecordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/utils/ReadAndWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_module2/utils/RegexData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/controllers/FuramaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/controllers/FuramaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Contract.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Contract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Facility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Facility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/House.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Villa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/models/Villa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/FacilityCSV/house.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/FacilityCSV/house.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/FacilityCSV/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/FacilityCSV/room.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/FacilityCSV/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/FacilityCSV/villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/booking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/booking.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/data/employee.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/BookingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/BookingServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/CustomerServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/EmployeeServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/FacilityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/services/implement/FacilityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/util/BookingComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module 2/CaseStudy/util/BookingComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/controllers/FuramaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Facility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/models/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/models/Villa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module 2/META-INF/Module 2.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2_demo/META-INF/module2_demo.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2_demo/TestDate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/house.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/house.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/room.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/FacilityCSV/villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/booking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/booking.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/employee.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/implement/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/BookingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/implement/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/implement/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/EmployeeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/services/implement/FacilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/services/implement/FacilityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/util/BookingComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/util/BookingComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,53 +104,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Demo_code/module2_demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/bai_thi_module2/utils" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="b17_binaryfile_serialization.bai_tap.product_management_binary_file" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CodeGym\Module 2\src\file_txt" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bai_thi_module2.utils" />
+      <recent name="b17_binaryfile_serialization.bai_tap.product_management_binary_file" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Module 2\src\bai_thi_module2\utils" />
+      <recent name="D:\Demo_code\module2_demo\src\demo_case_study\utils" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.FuramaController">
-    <configuration name="CrawlSongExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="b18_string_regex.thuc_hanh.CrawlList.CrawlSongExample" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="b18_string_regex.thuc_hanh.CrawlList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.controller (1)">
     <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CaseStudy.controllers.FuramaController" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="CaseStudy.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidateAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="b18_string_regex.thuc_hanh.validate_account.ValidateAccount" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="b18_string_regex.thuc_hanh.validate_account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,13 +164,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="controller (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_thi_module2.controllers.controller" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_thi_module2.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo_case_study.controllers.controller" />
+      <module name="module2_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo_case_study.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.controller (1)" />
+        <item itemvalue="Application.controller" />
         <item itemvalue="Application.FuramaController" />
         <item itemvalue="Application.ValidateClassName" />
         <item itemvalue="Application.ValidateNameClass" />
-        <item itemvalue="Application.CrawlSongExample" />
-        <item itemvalue="Application.ValidateAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +251,16 @@
       <workItem from="1649683517495" duration="2154000" />
       <workItem from="1649748844708" duration="8685000" />
       <workItem from="1649819588670" duration="1501000" />
-      <workItem from="1649839191976" duration="1125000" />
+      <workItem from="1649839191976" duration="19375000" />
+      <workItem from="1649903931419" duration="14258000" />
+      <workItem from="1649961742232" duration="931000" />
+      <workItem from="1649990880708" duration="11619000" />
+      <workItem from="1650022700360" duration="9283000" />
+      <workItem from="1650034783639" duration="260000" />
+      <workItem from="1650039994780" duration="2091000" />
+      <workItem from="1650211853467" duration="32000" />
+      <workItem from="1650213498844" duration="52000" />
+      <workItem from="1650298925745" duration="675000" />
     </task>
     <servers />
   </component>
@@ -258,14 +284,14 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="437" y="0" key="#Project_Structure/0.0.1475.789@0.0.1475.789" timestamp="1649078241672" />
-    <state x="483" y="197" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1649531782771">
+    <state x="483" y="197" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1650023826288">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="483" y="197" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1475.789@0.0.1475.789" timestamp="1649531782771" />
-    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1649751406857">
+    <state x="483" y="197" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1475.789@0.0.1475.789" timestamp="1650023826288" />
+    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1650027405771">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1475.789@0.0.1475.789" timestamp="1649751406857" />
+    <state x="543" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1475.789@0.0.1475.789" timestamp="1650027405771" />
     <state x="855" y="323" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1649249294537">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
@@ -274,10 +300,14 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="522" y="264" width="429" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1475.789@0.0.1475.789" timestamp="1649349257168" />
-    <state x="747" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1649225536304">
+    <state x="678" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1649991516535">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="747" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1475.789@0.0.1475.789" timestamp="1649225536304" />
+    <state x="678" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1475.789@0.0.1475.789" timestamp="1649991516535" />
+    <state x="468" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1650025628761">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="468" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1475.789@0.0.1475.789" timestamp="1650025628761" />
     <state x="468" y="142" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1649036052595">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
@@ -286,26 +316,26 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="518" y="150" key="FileChooserDialogImpl/0.0.1475.789@0.0.1475.789" timestamp="1648971721173" />
-    <state width="1431" height="223" key="GridCell.Tab.0.bottom" timestamp="1649778690164">
+    <state width="1431" height="227" key="GridCell.Tab.0.bottom" timestamp="1650299607066">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="223" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1649778690164" />
-    <state width="1431" height="223" key="GridCell.Tab.0.center" timestamp="1649778690163">
+    <state width="1431" height="227" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1650299607066" />
+    <state width="1431" height="227" key="GridCell.Tab.0.center" timestamp="1650299607066">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="223" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1649778690163" />
-    <state width="1431" height="223" key="GridCell.Tab.0.left" timestamp="1649778690163">
+    <state width="1431" height="227" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1650299607066" />
+    <state width="1431" height="227" key="GridCell.Tab.0.left" timestamp="1650299607066">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="223" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1649778690163" />
-    <state width="1431" height="223" key="GridCell.Tab.0.right" timestamp="1649778690164">
+    <state width="1431" height="227" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1650299607066" />
+    <state width="1431" height="227" key="GridCell.Tab.0.right" timestamp="1650299607066">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1648490051672" />
-    <state width="1431" height="223" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1649778690164" />
+    <state width="1431" height="227" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1650299607066" />
     <state width="1431" height="247" key="GridCell.Tab.1.bottom" timestamp="1649531888387">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
@@ -326,31 +356,43 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="359" y="99" key="NewModule_or_Project.wizard/0.0.1475.789@0.0.1475.789" timestamp="1648971665743" />
-    <state x="164" y="0" key="SettingsEditor" timestamp="1649222102133">
+    <state x="549" y="97" key="RollbackChangesDialog" timestamp="1649929781247">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="549" y="97" key="RollbackChangesDialog/0.0.1475.789@0.0.1475.789" timestamp="1649929781247" />
+    <state x="164" y="0" key="SettingsEditor" timestamp="1650010848817">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1648490146953" />
-    <state x="164" y="0" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1649222102133" />
-    <state x="93" y="93" width="1288" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1649420347863">
+    <state x="164" y="0" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1650010848817" />
+    <state x="132" y="88" width="1288" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1649872662569">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="93" y="93" width="1288" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1475.789@0.0.1475.789" timestamp="1649420347863" />
-    <state x="318" y="50" key="editAsTableFormatDialogDimension" timestamp="1649760192627">
+    <state x="132" y="88" width="1288" height="603" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1475.789@0.0.1475.789" timestamp="1649872662569" />
+    <state x="318" y="50" key="editAsTableFormatDialogDimension" timestamp="1650030008832">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="318" y="50" key="editAsTableFormatDialogDimension/0.0.1475.789@0.0.1475.789" timestamp="1649760192627" />
+    <state x="318" y="50" key="editAsTableFormatDialogDimension/0.0.1475.789@0.0.1475.789" timestamp="1650030008832" />
+    <state x="837" y="159" key="extract.method.dialog" timestamp="1649850876268">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="837" y="159" key="extract.method.dialog/0.0.1475.789@0.0.1475.789" timestamp="1649850876268" />
     <state x="119" y="15" key="new project wizard" timestamp="1648971724090">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="119" y="15" key="new project wizard/0.0.1475.789@0.0.1475.789" timestamp="1648971724090" />
-    <state x="814" y="156" key="refactoring.ChangeSignatureDialog" timestamp="1649301774357">
+    <state x="814" y="156" key="refactoring.ChangeSignatureDialog" timestamp="1649844670467">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="814" y="156" key="refactoring.ChangeSignatureDialog/0.0.1475.789@0.0.1475.789" timestamp="1649301774357" />
-    <state x="349" y="1" width="775" height="787" key="search.everywhere.popup" timestamp="1649385658886">
+    <state x="814" y="156" key="refactoring.ChangeSignatureDialog/0.0.1475.789@0.0.1475.789" timestamp="1649844670467" />
+    <state x="394" y="178" key="run.anything.popup" timestamp="1650024925475">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="394" y="178" key="run.anything.popup/0.0.1475.789@0.0.1475.789" timestamp="1650024925475" />
+    <state x="349" y="1" width="775" height="787" key="search.everywhere.popup" timestamp="1650026496160">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1648490077721" />
-    <state x="349" y="1" width="775" height="787" key="search.everywhere.popup/0.0.1475.789@0.0.1475.789" timestamp="1649385658886" />
+    <state x="349" y="1" width="775" height="787" key="search.everywhere.popup/0.0.1475.789@0.0.1475.789" timestamp="1650026496160" />
   </component>
 </project>

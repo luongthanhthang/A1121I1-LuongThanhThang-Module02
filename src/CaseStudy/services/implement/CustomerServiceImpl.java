@@ -1,6 +1,7 @@
 package CaseStudy.services.implement;
 
 import CaseStudy.models.Customer;
+import CaseStudy.models.Employee;
 import CaseStudy.services.CustomerService;
 import CaseStudy.util.ReadAndWrite;
 
@@ -27,10 +28,15 @@ public class CustomerServiceImpl implements CustomerService {
 //    }
 
     //hiển thị list để truyền dữ liệu
-    public  LinkedList<Customer> getListCustomer() {
+    public LinkedList<Customer> getListCustomer() {
         //khởi tạo list customer
-        List<String> customerLinkedList = customerReadAndWrite.readFromFile(PATH);
-        
+        LinkedList<Customer> customerLinkedList = new LinkedList<>();
+        List<String> stringList = customerReadAndWrite.readFromFile(PATH);
+        for (String customerString : stringList) {
+            //vì các thuộc tính trong file CSV được ngăn cách bởi dấu ","
+            String[] stringProperty = customerString.split(",");
+            customerLinkedList.add(new Customer(stringProperty[0], stringProperty[1], stringProperty[2], stringProperty[3], Integer.parseInt(stringProperty[4]), stringProperty[5], stringProperty[6], stringProperty[7], stringProperty[8]));
+        }
         return customerLinkedList;
     }
 
@@ -80,12 +86,16 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void addNew() {
-        List<Customer>
+        LinkedList<Customer> customerLinkedList = getListCustomer();
         customerLinkedList.add(inputCustomer());
+        //ghi vào file
+        customerReadAndWrite.writeToFile(customerLinkedList, PATH, "name, dateOfBirth, sex, id, phoneNumber, email, address, idCustomer, rankCustomer");
+
     }
 
     @Override
     public void display() {
+        LinkedList<Customer> customerLinkedList = getListCustomer();
         //xoá những đối tượng bị null
         while (customerLinkedList.contains(null)) {
             customerLinkedList.remove(null);
@@ -99,6 +109,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void edit() {
+        LinkedList<Customer> customerLinkedList = getListCustomer();
         boolean check = true;
         //hiển thị lại list Customer
         display();
@@ -114,6 +125,8 @@ public class CustomerServiceImpl implements CustomerService {
                 check = false;
             }
         }
+        //ghi vào file
+        customerReadAndWrite.writeToFile(customerLinkedList, PATH, "name, dateOfBirth, sex, id, phoneNumber, email, address, idCustomer, rankCustomer");
         if (check) {
             System.out.println("NOT FIND ID!");
         }

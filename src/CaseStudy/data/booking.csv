@@ -1,0 +1,9 @@
+idBooking,  startDate,  endDate,  name, dateOfBirth, sex, id, phoneNumber, email, address, idCustomer, rankCustomer, facility, , , , , , , , 
+4,02/02/2000,05/05/2000,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100
+2,05/05/2000,06/06/2000,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100
+7,06/06/2000,07/07/2000,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100
+8,08/08/2000,10/10/2000,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100
+6,09/09/2000,09/09/2000,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100
+1,12/12/2000,05/05/2001,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100
+3,02/02/2001,04/04/2001,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100
+5,10/10/2001,15/11/2001,Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com, DaNang4,CUS444,Silver,002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100

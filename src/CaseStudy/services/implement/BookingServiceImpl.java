@@ -10,46 +10,54 @@ import java.util.*;
 public class BookingServiceImpl implements BookingService {
     /*1. Khi thực hiện booking phải hiển thị danh sách khách hàng cho nhân viên chọn mã khách hàng,
     hiển thị danh sách dịch vụ cho nhân viên chọn mã dịch vụ.*/
-
-    //Set vì danh sách booking luôn khác nhau
-    //dùng TreeSet vì list phải sắp xếp theo trật tụ là ngày
     static Set<Booking> bookingListSet = new TreeSet<>(new BookingComparator());
-
-    //danh sách khách hàng
-    static List<Customer> customerList = CustomerServiceImpl.getListCustomer();
-
-    //danh sách dịch vụ
-    static Map<Facility, Integer> serviceList = FacilityServiceImpl.getListFacility();
 
     //list booking đệm, khi hoàn thành hợp đồng thì list booking này sẽ bị xoá hết dữ liệu
     static Set<Booking> bookingListSetBuffer = new TreeSet<>(new BookingComparator());
 
-    //đường link CSV
-    private static final String PATH = "D:\\CodeGym\\Module 2\\src\\CaseStudy\\data\\booking.csv";
+    //Set vì danh sách booking luôn khác nhau
+    //dùng TreeSet vì list phải sắp xếp theo trật tụ là ngày
 
+    //danh sách khách hàng
+    static List<Customer> customerList = new CustomerServiceImpl().getListCustomer();
+
+    //danh sách dịch vụ HOUSE, ROOM, VILLA
+    static Map<House, Integer> listHouse = new FacilityServiceImpl().getListHouse();
+    static Map<Room, Integer> listRoom = new FacilityServiceImpl().getListRoom();
+    static Map<Villa, Integer> listVilla = new FacilityServiceImpl().getListVilla();
+
+    static Map<Facility, Integer> serviceList = new FacilityServiceImpl().getListFacility();
+
+    //đường link CSV và HEADER
+    private static final String PATH = "D:\\CodeGym\\Module 2\\src\\CaseStudy\\data\\booking.csv";
+    private static final String HEADER = "idBooking,  startDate,  endDate,  name, dateOfBirth, sex, id, phoneNumber, email, address, idCustomer, rankCustomer, facility, , , , , , , , ";
     //khai báo đọc ghi file CSV
-    ReadAndWrite<Booking> bookingReadAndWrite = new ReadAndWrite<>();
+    static ReadAndWrite<Booking> bookingReadAndWrite = new ReadAndWrite<>();
 
     //tạo dữ liệu cho list booking để test chức năng promotionService
-    static {
-        bookingListSet.add(new Booking(4, "02/02/2000", "05/05/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSet.add(new Booking(3, "02/02/2001", "04/04/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSet.add(new Booking(2, "05/05/2000", "06/06/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSet.add(new Booking(1, "12/12/2000", "05/05/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSet.add(new Booking(5, "10/10/2001", "15/11/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSet.add(new Booking(7, "06/06/2000", "07/07/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSet.add(new Booking(6, "09/09/2000", "09/09/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSet.add(new Booking(8, "08/08/2000", "10/10/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-
-        bookingListSetBuffer.add(new Booking(4, "02/02/2000", "05/05/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSetBuffer.add(new Booking(3, "02/02/2001", "04/04/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSetBuffer.add(new Booking(2, "05/05/2000", "06/06/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSetBuffer.add(new Booking(1, "12/12/2000", "05/05/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSetBuffer.add(new Booking(5, "10/10/2001", "15/11/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSetBuffer.add(new Booking(7, "06/06/2000", "07/07/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSetBuffer.add(new Booking(6, "09/09/2000", "09/09/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-        bookingListSetBuffer.add(new Booking(8, "08/08/2000", "10/10/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
-    }
+//    static {
+//        bookingListSet.add(new Booking(4, "02/02/2000", "05/05/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(3, "02/02/2001", "04/04/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(2, "05/05/2000", "06/06/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(1, "12/12/2000", "05/05/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(5, "10/10/2001", "15/11/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(7, "06/06/2000", "07/07/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(6, "09/09/2000", "09/09/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(8, "08/08/2000", "10/10/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSet.add(new Booking(8, "08/08/2000", "10/10/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new House("002", "House", 20.5, 222222, 600, "PartDay", "4 sao", 6)));
+//        bookingListSet.add(new Booking(8, "08/08/2000", "10/10/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Room("002", "Room", 20.5, 222222, 600, "PartDay", "4 sao")));
+//
+//        bookingListSetBuffer.add(new Booking(4, "02/02/2000", "05/05/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSetBuffer.add(new Booking(3, "02/02/2001", "04/04/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSetBuffer.add(new Booking(2, "05/05/2000", "06/06/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSetBuffer.add(new Booking(1, "12/12/2000", "05/05/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSetBuffer.add(new Booking(5, "10/10/2001", "15/11/2001", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSetBuffer.add(new Booking(7, "06/06/2000", "07/07/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSetBuffer.add(new Booking(6, "09/09/2000", "09/09/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//        bookingListSetBuffer.add(new Booking(8, "08/08/2000", "10/10/2000", new Customer("Thang4", "4/4/2000", "female", "ID444444444", 84444444, "thang444gmail.com", "DaNang4", "CUS444", "Silver"), new Villa("002", "Villa 2", 20.5, 222222, 600, "PartDay", "4 sao", 6, 100)));
+//
+//        bookingReadAndWrite.writeToFile(bookingListSet, PATH, HEADER);
+//    }
 
     //hiện tại chưa có đọc ghi file nên sẽ tạo dữ liệu cứng
     //dùng static để tạo sẵn dữ liệu
@@ -71,6 +79,14 @@ public class BookingServiceImpl implements BookingService {
 
     //xuất list booking set để chuyển thành Queue bên hợp đồng
     public Set<Booking> bookingListSetToQueue() {
+        //tiến hành đọc file để lấy dữ liệu
+//        List<String> stringList = bookingReadAndWrite.readFromFile(PATH);
+//
+//        for (String string: stringList) {
+//            //cắt thành chuỗi
+//            String[] bookingArray = string.split(",");
+//            bookingListSetBuffer.add(new Booking())
+//        }
         return bookingListSetBuffer;
     }
 
@@ -177,10 +193,12 @@ public class BookingServiceImpl implements BookingService {
         System.out.println("-----ADD BOOKING SUCCESS!-----");
     }
 
+    //add
+
     //hiện danh sách booking
     @Override
     public void display() {
-        for (Booking booking: bookingListSet) {
+        for (Booking booking : bookingListSet) {
             System.out.println(booking.toStringDisplay());
         }
     }

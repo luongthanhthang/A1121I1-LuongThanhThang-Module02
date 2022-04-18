@@ -1,0 +1,7 @@
+name, dateOfBirth, sex, id, phoneNumber, email, address, idCustomer, rankCustomer
+Thang4,4/4/2000,female,ID444444444,84444444,thang444gmail.com,   DaNang4,CUS444,Silver
+Thang1,1/1/2000,male,ID1111111111,84111111,thang111@gmail.com,   DaNang1,CUS111,Diamond
+Thang2,2/2/2000,female,ID222222222,84222222,thang222@gmail.com,   DaNang2,CUS222,Platinum
+Thang5,5/5/2000,male,ID555555555,84555555,thang555@gmail.com,   DaNang5,CUS555,Member
+Thang3,3/3/2000,male,ID333333333,84333333,thang333@gmail.com,   DaNang3,CUS333,Gold
+4,4,4,4,4,4, 4,4,4

@@ -1,0 +1,4 @@
+idFacility, name, area, cost, maxPeople, rentType, standardRoomHouse, numberFloorHouse, USED
+4,4,4.0,4.0,4,4,4,4,0
+005,House 1,100.0,500.0,100,House,10 sao,10,0
+006,House 3,200.0,600.0,150,House,1000 sao,60,0

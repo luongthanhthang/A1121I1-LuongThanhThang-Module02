@@ -3,6 +3,7 @@ package CaseStudy.services.implement;
 import CaseStudy.models.Employee;
 import CaseStudy.services.EmployeeService;
 import CaseStudy.util.ReadAndWrite;
+import CaseStudy.util.RegexData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +17,8 @@ import java.util.Scanner;
 // hoàn thành chức năng Employee Management
 public class EmployeeServiceImpl implements EmployeeService {
 
+    //REGEX ngày sinh dd-MM-yyyy
+    private static final String REGEX_BIRTHDAY = "^(?:(?:31(/)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(/)(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(/)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(/)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$";
 
     //khai báo scanner để người dùng nhập vào thông tin
     Scanner scanner = new Scanner(System.in);
@@ -33,7 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             String name = scanner.nextLine();
 
             System.out.print("input dateOfBirth Employee: ");
-            String dateOfBirth = scanner.nextLine();
+            String dateOfBirth = RegexData.regexAge(scanner.nextLine(), REGEX_BIRTHDAY);
 
             System.out.print("input sex Employee: ");
             String sex = scanner.nextLine();

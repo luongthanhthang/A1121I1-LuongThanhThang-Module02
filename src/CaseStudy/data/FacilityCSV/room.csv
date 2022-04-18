@@ -1,0 +1,4 @@
+idFacility, name, area, cost, maxPeople, rentType, serviceFreeRoom, USED
+9,9,9.0,9.0,9,9,9,0
+009,Room 1,100.0,200.0,50,Room,eat,0
+050,Room 2,200.0,400.0,60,Room,Sleep,0

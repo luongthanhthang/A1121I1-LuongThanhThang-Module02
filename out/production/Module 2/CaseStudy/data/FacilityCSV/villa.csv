@@ -1,0 +1,5 @@
+idFacility, name, area, cost, maxPeople, rentType, standardRoomVilla, areaPool, numberFloorVilla, USED
+001,Villa 1,10.5,111111.0,500,FullDay,5 sao,5.0,50,0
+002,Villa 2,20.5,222222.0,600,PartDay,4 sao,6.0,100,0
+003,Villa 3,30.5,333333.0,700,FullDay,3 sao,7.0,150,0
+1,1,1.0,1.0,1,1,1,1.0,1,0
